@@ -12,7 +12,7 @@ detector = vision.HandLandmarker.create_from_options(options)
 
 
 # STEP 3: Load the input image.
-image = mp.Image.create_from_file("WIN_20251002_19_42_48_Pro.jpg")
+image = mp.Image.create_from_file("WIN_20251002_19_42_48_Pro.jpg") #Replace your image path
 
 
 # STEP 4: Detect objects in the input image.
@@ -36,5 +36,6 @@ cv2.resizeWindow("Hand Landmarks", 420, 315)
 cv2.imshow("Hand Landmarks", rgb_annotated_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
 
 
